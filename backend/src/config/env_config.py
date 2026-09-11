@@ -34,5 +34,7 @@ class EnvConfig:
     azure_resource_group: str | None = os.getenv("AZURE_RESOURCE_GROUP")
     azure_vi_name: str = os.getenv("AZURE_VI_NAME", "project-brand-guardian-001")
 
+    azure_application_insights_connection_str: str | None = os.getenv("APPLICATIONINSIGHTS_CONNECTION_STRING")
+
 
 envConfig = EnvConfig()
